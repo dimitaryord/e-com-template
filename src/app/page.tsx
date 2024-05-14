@@ -2,6 +2,8 @@ import React from "react"
 import Image from "next/image"
 import { TiTick } from "react-icons/ti"
 import Button from "@/components/ui/Button"
+import ProductHeroCard from "@/components/products/ProductHeroCard"
+import ProductHeroMoreCard from "@/components/products/ProductHeroMoreCard"
 
 export default function Home() {
   return (
@@ -37,6 +39,24 @@ export default function Home() {
         <div className="flex-grow flex justify-center items-center">
           <Image width="500" height="500" src="/hero1.png" alt="hero1 image" />
         </div>
+      </section>
+
+      <section className="min-h-screen p-5 space-y-10">
+        <h1 className="text-6xl text-secondary/[0.8]">Our <span className="text-card">Products</span></h1>
+        <div className="grid gap-5 p-10 md:grid-cols-4 grid-cols-1 w-full">
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroCard image="/product-images/p1.png" title="Alpaca 1" description="An awesome alpaca" price={24} currency="en-US" />
+          <ProductHeroMoreCard />
+        </div>
+      </section>
+
+      <section>
+        
       </section>
     </main>
   )
